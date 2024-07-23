@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.image-container {
+  background-image: url(./assets/images/mysterious-forest-during-autumn.jpg);
+  width: 100%;
+  height: 25vh;
+  color: rgb(243, 238, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16rem;
+}
+
+.image-container h3 {
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+
+.theme-toggle {
+ background: none;
+ border: none;
+}
+.image-container img {
+ cursor: pointer;
+}
+
+.input-container {
+  background-color: rgb(21, 21, 21);
+  width: 100%;
+  height: 75%;
+  position: relative;
+}
+
+.inputfield-container {
+  width: 35%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: rgb(33, 31, 31);
+  color: rgb(243, 238, 235);
+  position: absolute;
+  top: -12%;
+  left: 35%;
+}
+
+.input {
+  margin: 1rem;
+  border-bottom: 10px rgb(33, 31, 31);
+  box-shadow: 10px 5px 15px rgb(7, 7, 7);
+  display: flex;
+}
+
+#input-el {
+  padding: 0.25rem 1rem;
+  width: 100%;
+  background-color: rgb(33, 31, 31);
+  color: rgb(243, 238, 235);
+  border: 1px solid rgb(243, 238, 235);
+  border-radius: 10px;
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  right: 3%;
+  width: 15%;
+  padding: 0.28rem;
+  border-radius: 10px;
+  border: none;
+  color: rgb(243, 238, 235);
+  font-weight: 700;
+  background-color: rgb(152, 147, 147);
+}
+
+.empty-state {
+  display: none;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.empty-state-image {
+ width: 10rem;
+}
+.empty-state-text {
+  font-size: 1.5rem;
+}
+
+.task-list li {
+list-style: none;
+color: rgb(243, 238, 235);
+border: 1px solid rgb(243, 238, 235);
+margin: 1rem;
+padding: 0.5rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.delete {
+  display: none;
+}
+.deletebtn {
+  width: 20px;
+   height: 20px;
+   display: none;
+   
+  }
+
+.task-list li span {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+  .task-list li:hover .deletebtn,.task-list li:hover .delete {
+    display: block;
+    }
+
+
+.task-list li.completed {
+ text-decoration: line-through;
+ color: #494949;;
+}
+
+.counter {
+  position: fixed;
+  bottom: 10%;
+  right: 32%;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
